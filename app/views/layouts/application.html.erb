@@ -10,6 +10,22 @@
   </head>
 
   <body>
+   <%= Date.today %>
+
+   <form action="/projects" method="get">
+  <input type="text" name="countries" placeholder="Which country are you looking for?">
+  <input type="submit">
+</form>
+
+
+<ul>
+<li><%= link_to "Home", root_path %></li>
+<li><%= link_to "Projects", projects_path %></li>
+<li><%= link_to "Franchisees", franchisee_path %></li>
+<li><%= link_to "HR", hr_path %></li>
+<li><%= link_to "About", about_path %></li>
+</ul>
+
     <%= yield %>
   </body>
 </html>
