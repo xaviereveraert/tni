@@ -7,4 +7,6 @@ root to: 'pages#home'
   get '/hr', to: 'pages#hr'
   get '/franchisee', to: 'pages#franchisee'
   get '/projects', to: 'pages#projects'
+
+
 end
