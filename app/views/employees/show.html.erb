@@ -1,3 +1,6 @@
 <h2> <%= @employee.name %> </h2>
 <p> <%= @employee.role %> </p>
 
+<%= link_to 'All employees', employees_path %>
+<%= link_to 'Edit', edit_employee_path(@employee) %>
+<%= link_to 'Delete', employee_path(@employee.id), method: :delete, data: {confirm: 'Are you sure?'}  %>

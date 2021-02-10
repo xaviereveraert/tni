@@ -1,5 +1,10 @@
 <h1>all employees</h1>
+
+<%= link_to 'Add an employee', new_employee_path %>
+
 <% @employees.each do |employee| %>
-<h5> <%= employee.name %> </h5>
+<h5> <%= link_to employee.name, employee_path(employee) %> </h5>
 <h5> <%= employee.role %> </h5>
 <% end  %>
+
+
