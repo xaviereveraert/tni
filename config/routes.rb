@@ -25,11 +25,7 @@ root to: 'pages#home'
   resources :employees do
     #/employees/..
     collection do
-    get :sales
-    end
-
-    collection do
-    get :marketing
+    get :sales, :marketing
     end
 
   end
