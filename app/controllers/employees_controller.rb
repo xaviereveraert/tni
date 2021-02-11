@@ -36,6 +36,14 @@ class EmployeesController < ApplicationController
     redirect_to employees_path
   end
 
+  def sales
+    @employees = Employee.where(role: 'sales')
+  end
+
+
+  def marketing
+    @employees = Employee.where(role: 'marketing')
+  end
 private
 
 def employee_params

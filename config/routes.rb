@@ -22,5 +22,16 @@ root to: 'pages#home'
 #delete employee
 #delete '/employees/:id', to: 'employees#destroy'
 
-resources :employees
+  resources :employees do
+    #/employees/..
+    collection do
+    get :sales
+    end
+
+    collection do
+    get :marketing
+    end
+
+  end
+
 end
