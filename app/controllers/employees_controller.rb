@@ -1,7 +1,7 @@
 class EmployeesController < ApplicationController
 
 
-  def index #all employees
+  def index
     @employees = Employee.all
   end
 
